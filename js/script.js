@@ -18,7 +18,7 @@ console.log(age);
 
 if(isNaN(kilometri) || isNaN(age)){
     mioDiv.innerHTML = 'Devi inserire numeri!';
-    //location.reload();
+    location.reload();
 }
 
 let prezzo = costoKm * kilometri;
