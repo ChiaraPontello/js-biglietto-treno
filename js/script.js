@@ -22,8 +22,7 @@ if(isNaN(kilometri) || isNaN(age)){
 }
 
 
-document.getElementById('prezzo').innerHTML = prezzo.toFixed(2);
-console.log(prezzo);
+
 
 let prezzo = costoKm * kilometri;
 
@@ -40,4 +39,5 @@ else {
     console.log(prezzo);
 }
 
-
+document.getElementById('prezzo').innerHTML = prezzo.toFixed(2);
+console.log(prezzo);
