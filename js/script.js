@@ -39,5 +39,5 @@ else {
     console.log(prezzo);
 }
 
-document.getElementById('prezzo').innerHTML = prezzo.toFixed(2);
+document.getElementById('prezzo').innerHTML = `Il prezzo del biglietto è: ${prezzo.toFixed(2)}€`;
 console.log(prezzo);
