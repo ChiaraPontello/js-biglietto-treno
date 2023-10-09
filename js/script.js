@@ -8,6 +8,8 @@
 let mioDiv = document.getElementById('testo');
 console.log(mioDiv);
 
+let costoKm = 0.20;
+
 let kilometri = parseInt(prompt('Quanti kilometri vuoi percorrere?'));
 console.log(kilometri);
 
@@ -15,5 +17,22 @@ let age = parseInt(prompt('Quanti anni hai?'));
 console.log(age);
 
 if(isNaN(kilometri) || isNaN(age)){
-    mioDiv.innerHTML = 'Devi inserire numeri!'
+    mioDiv.innerHTML = 'Devi inserire numeri!';
+    location.reload();
 }
+
+let prezzo = costoKm * kilometri;
+
+
+
+if (age < 18) {
+    prezzo = prezzo - (prezzo * 20/100);
+    console.log(prezzo);} 
+else if (age > 65) {
+    prezzo = prezzo - (prezzo * 40/100);
+    console.log(prezzo);}
+else {
+    console.log(prezzo);
+}
+
+
